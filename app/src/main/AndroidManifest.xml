@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET">
-    </uses-permission>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,11 +11,17 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RetroFitGetAPI"
-        tools:targetApi="31"
-        android:usesCleartextTraffic="true">
+        android:theme="@style/Theme.RetrofitGetAPI"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.retrofitgetapi.Fitur.Insert"
+            android:exported="false" />
+        <activity
+            android:name="com.example.retrofitgetapi.Fitur.Edit"
+            android:exported="false" />
+        <activity
+            android:name="com.example.retrofitgetapi.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
